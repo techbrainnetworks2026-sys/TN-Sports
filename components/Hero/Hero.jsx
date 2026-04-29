@@ -1,5 +1,5 @@
 import React from "react";
-import "./hero.css";
+import "./Hero.css";
 
 export default function Hero() {
 
@@ -9,7 +9,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="hero">
+    <section className="hero">
 
       {/* Floating particles */}
       <div className="hero-particles">

@@ -161,7 +161,7 @@ export default function Footer() {
                 <div className="footer-bottom-content">
                     <p>© 2026 Techbrain Networks. All rights reserved.</p>
                     <p className="designed-by">
-                        Designed & Built with <span className="heart">⚡</span> for Sports Technology
+                        Designed & Built with <span className="heart">❤️</span> for Sports Technology
                     </p>
                 </div>
             </div>

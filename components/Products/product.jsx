@@ -1,6 +1,6 @@
 import React from 'react';
+import ProductCard from './productCard';
 import './product.css';
-
 
 const productsList = [
   {
@@ -8,7 +8,6 @@ const productsList = [
     name: 'Sports Performance Analytics and Coaching Software',
     Image: "/Images/product1.png",
     description: 'Advanced metrics and AI-driven insights to elevate athlete performance and refine coaching strategies.'
-
   },
   {
     id: 2,
@@ -88,9 +87,7 @@ const productsList = [
     Image: "/Images/product14.png",
     description: 'Interactive AR solutions that enhance fan engagement through immersive experiences, live stats overlays, and virtual stadium interactions.'
   },
-
   {
-
     id: 15,
     name: 'Sports Broadcasting and Content Distribution Platforms',
     Image: "/Images/product15.png",
@@ -125,8 +122,7 @@ const productsList = [
     name: 'Golf Course Management and Reservation Software',
     Image: "/Images/product20.png",
     description: 'Seamless integration of wearable devices to track performance metrics, biometrics, and real-time athlete data for optimized training and recovery.'
-
-  },
+  }
 ];
 
 const Products = () => {
@@ -135,25 +131,19 @@ const Products = () => {
       <div className="products-header">
         <span className="products-eyebrow">Our Products</span>
         <h2 className="products-title"><span>Sports</span> Technology Core <span>Products</span></h2>
-        <p className="product-desc" style={{ fontSize: '1.3rem', margin: '0 auto', maxWidth: '600px' }}>
-          Discover our comprehensive suite of 20 cutting-edge products designed to revolutionize the sports industry.
+        <p className="product-desc" style={{ fontSize: '1.2rem', margin: '0 auto', maxWidth: '800px', opacity: 0.8 }}>
+          Discover our comprehensive suite of 20 cutting-edge products designed to revolutionize the sports industry through AI, IoT, and data-driven insights.
         </p>
       </div>
 
       <div className="products-grid">
-        {productsList.map((product, index) => (
-          <div key={index} className="product-card">
-            {/* <div className="product-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-              </svg>
-            </div> */}
-            <img src={product.Image} alt={product.name} className="product-image" />
-            <h3 className="product-name">{product.name}</h3>
-            <p className="product-desc">{product.description}</p>
-            <button className="product-button">Learn More</button>
-
-          </div>
+        {productsList.map((product) => (
+          <ProductCard 
+            key={product.id}
+            name={product.name}
+            image={product.Image}
+            description={product.description}
+          />
         ))}
       </div>
     </section>
@@ -161,3 +151,4 @@ const Products = () => {
 };
 
 export default Products;
+

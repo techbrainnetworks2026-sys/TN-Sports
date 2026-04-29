@@ -31,7 +31,7 @@ const sportsIndustries = [
 
 export default function Industries() {
   return (
-    <section className="industries-section" id="industries">
+    <section className="industries-section">
       <div className="industries-container">
         {/* Heading Section */}
         <div className="industries-header">

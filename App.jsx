@@ -47,7 +47,9 @@ function App() {
       </section>
 
       {/* Contact */}
-      <Contact />
+      <section id="contact">
+        <Contact />
+      </section>
 
       {/* Footer */}
       <Footer />
