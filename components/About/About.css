@@ -1,0 +1,539 @@
+/* ===========================
+   ABOUT PAGE - About.css
+   =========================== */
+
+/* BASE */
+.about-page {
+  font-family: 'DM Sans', sans-serif;
+  background: #0a1520;
+  color: #1b3e2b;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+.about-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 80px 80px;
+  margin-left: 350px;
+}
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(76, 175, 80, 0.1) 0%, transparent 70%);
+}
+
+.about-hero-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(76, 175, 80, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(76, 175, 80, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  animation: aboutFadeUp 0.7s ease both;
+}
+
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 75, 92, 0.1);
+  border: 1px solid rgba(255, 75, 92, 0.3);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ccff00;
+  margin-bottom: 25px;
+}
+
+.about-eyebrow::before {
+  content: '🏆';
+  font-size: 1rem;
+}
+
+.about-hero-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.about-gradient-text {
+  color: #ccff00;
+
+}
+
+.about-hero-desc {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  max-width: 600px;
+  margin-bottom: 48px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.about-stats {
+  display: flex;
+  animation: slideDown 1.1s ease 0.45s both;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #15131395;
+  padding: 24px 32px;
+  border-radius: 16px;
+  border-top: 4px solid #000000;
+  box-shadow: 0 8px 24px rgba(4, 4, 4, 0.54);
+  min-width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #A5D6A7;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #ffffff(0, 0, 0);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* ===========================
+   SHARED SECTION STYLES
+   =========================== */
+.about-vmp,
+.about-revolution,
+.about-founder,
+.about-contact {
+  padding: 100px 80px;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ccff00;
+  border: 1px solid rgba(255, 75, 92, 0.3);
+  background: rgba(255, 75, 92, 0.1);
+  padding: 8px 20px;
+  border-radius: 25px;
+  margin-bottom: 16px;
+}
+
+.section-tag::after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: #2e7d32;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 48px;
+  color: #ffffff;
+}
+
+/* ===========================
+   VISION / MISSION / PASSION
+   =========================== */
+.about-vmp {
+  background: #0a1520;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-vmp::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(76, 175, 80, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.vmp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  border: none;
+  border-radius: 16px;
+  overflow: visible;
+}
+
+.vmp-card {
+  padding: 48px 40px;
+  background: f9fdf9;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.vmp-card:nth-child(1) {
+  border-left-color: #4caf50;
+}
+
+.vmp-card:nth-child(2) {
+  border-left-color: #2196f3;
+}
+
+.vmp-card:nth-child(3) {
+  border-left-color: #ff9800;
+}
+
+.vmp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.vmp-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.icon-v {
+  background: #e8f5e9;
+  color: #4caf50;
+}
+
+.icon-m {
+  background: #e3f2fd;
+  color: #2196f3;
+}
+
+.icon-p {
+  background: #fff3e0;
+  color: #ff9800;
+}
+
+.vmp-card h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.vmp-card p {
+  font-size: 0.92rem;
+  color: #e2e2e2;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* ===========================
+   REVOLUTION SECTION
+   =========================== */
+.about-revolution {
+  background: #0a1520;
+}
+
+.revolution-inner {
+  background: f9fdf9;
+  border-left: 4px solid #4caf50;
+  border-right: 4px solid #4caf50;
+
+  border-radius: 24px;
+  padding: 64px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 64px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+}
+
+.revolution-inner::after {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(76, 175, 80, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.revolution-text-side .section-title {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.revolution-text-side p {
+  font-size: 1.05rem;
+  color: #ffffff;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+.revolution-text-side strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.revolution-numbers {
+  display: grid;
+  gap: 16px;
+  min-width: 180px;
+  position: relative;
+  z-index: 1;
+}
+
+.rev-num-item {
+  text-align: center;
+  padding: 24px 20px;
+  background: #f9fdf9;
+  border: 1px solid rgba(76, 175, 80, 0.15);
+  border-radius: 12px;
+}
+
+.rev-num {
+  display: block;
+  font-family: 'Syne', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1;
+}
+
+.rev-label {
+  display: block;
+  font-size: 0.72rem;
+  color: #000000;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+/* ===========================
+   FOUNDER SECTION
+   =========================== */
+.about-founder {
+  background: #0a1520;
+}
+
+.founder-card {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  padding: 64px;
+  background: #ffffff;
+  border: none;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.founder-card::before {
+  content: '"';
+  position: absolute;
+  right: 48px;
+  top: 24px;
+  font-family: 'Syne', sans-serif;
+  font-size: 10rem;
+  font-weight: 800;
+  color: rgba(27, 94, 32, 0.08);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.founder-avatar {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #e6e6e6;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.founder-avatar::after {
+  display: none;
+}
+
+.founder-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+.founder-role {
+  display: block;
+  font-size: 0.8rem;
+  color: #000000;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.founder-info p {
+  font-size: 0.95rem;
+  color: #385c47;
+  line-height: 1.8;
+  font-weight: 500;
+  max-width: 600px;
+}
+
+/* ===========================
+   ANIMATIONS
+   =========================== */
+@keyframes aboutFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   GOOGLE FONTS IMPORT
+   =========================== */
+
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 100px 48px 60px;
+  }
+
+  .about-vmp,
+  .about-revolution,
+  .about-founder {
+    padding: 72px 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 100px 24px 60px;
+  }
+
+  .about-vmp,
+  .about-revolution,
+  .about-founder {
+    padding: 64px 24px;
+  }
+
+  .about-stats {
+    gap: 28px;
+  }
+
+  .vmp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vmp-card+.vmp-card {
+    border-left: none;
+    border-top: 1px solid rgba(76, 175, 80, 0.15);
+  }
+
+  .revolution-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 24px;
+  }
+
+  .revolution-numbers {
+    grid-template-columns: repeat(3, 1fr);
+    min-width: unset;
+  }
+
+  .founder-card {
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .founder-card::before {
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .about-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .revolution-numbers {
+    grid-template-columns: 1fr;
+  }
+}

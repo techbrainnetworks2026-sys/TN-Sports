@@ -1,0 +1,156 @@
+.careers-container {
+  padding: 80px 5%;
+  background-color: #0a1520;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.careers-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.careers-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ccff00;
+  /* Reddish coral matching screenshots */
+  letter-spacing: 1px;
+}
+
+.careers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.career-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 30px;
+  border-radius: 15px;
+  min-height: 260px;
+
+  /* Gradient border magic using background-clip */
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(#0a1520, #0a1520),
+    linear-gradient(135deg, #ccff00, rgba(204, 255, 0, 0.3));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(204, 255, 0, 0.15);
+}
+
+.career-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.career-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #ccff00;
+  /* Orange ring */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0a1520;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.career-icon+.career-icon {
+  margin-left: -15px;
+  /* Overlap effect */
+}
+
+.career-job-title {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.career-skills {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.career-skills strong {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.career-apply {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.apply-btn {
+  background: linear-gradient(90deg, #ccff00, #06b25fb8);
+  color: #000000;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.apply-btn:hover {
+  opacity: 0.95;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(204, 255, 0, 0.3);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .careers-container {
+    padding: 60px 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-title {
+    font-size: 2.8rem;
+  }
+
+  .career-card {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-title {
+    font-size: 2.2rem;
+  }
+  
+  .careers-container {
+    padding: 50px 20px;
+  }
+
+  .careers-grid {
+    grid-template-columns: 1fr;
+  }
+}
