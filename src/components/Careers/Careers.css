@@ -106,7 +106,7 @@
 }
 
 .apply-btn {
-  background: linear-gradient(90deg, #ccff00, #06b25fb8);
+  background: linear-gradient(90deg, #ccff00, #cddc39d6);
   color: #000000;
   border: none;
   padding: 10px 35px;
@@ -145,7 +145,7 @@
   .careers-title {
     font-size: 2.2rem;
   }
-  
+
   .careers-container {
     padding: 50px 20px;
   }
