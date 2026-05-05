@@ -125,3 +125,34 @@
 .product-card:hover .product-button {
   transform: translateY(0);
 }
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .product-image-container {
+    padding-top: 65%;
+  }
+  
+  .product-info {
+    padding: 20px 16px;
+  }
+  
+  .product-name {
+    font-size: 1.15rem;
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-image-container {
+    padding-top: 70%; 
+  }
+  
+  .product-name {
+    font-size: 1.1rem;
+  }
+}

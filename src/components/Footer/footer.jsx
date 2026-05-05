@@ -115,6 +115,7 @@ export default function Footer() {
                         <a href="#services">Services</a>
                         <a href="#careers">Careers</a>
                         <a href="#contact">Contact</a>
+                        <a href="#privacy-policy">Privacy Policy</a>
                     </div>
                 </div>
 
